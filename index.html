@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>뫙뫙</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/jquery.bxslider.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.main_bannerbox').bxSlider();
+            $('.main-m li').mouseenter(function () {
+                $(this).children('.sub-m').stop().slideDown()
+            })
+            $('.main-m li').mouseleave(function () {
+                $(this).children('.sub-m').stop().slideUp()
+            })
+            $('.goodfood-slide').bxSlider({
+                maxSlides: 5,
+                moveSlides: 1,
+                slideWidth: 326
+            })
+            $('.salefood-slide').bxSlider({
+                maxSlides: 5,
+                moveSlides: 1,
+                slideWidth: 326
+            })
+            $('.review-slide').bxSlider({
+                maxSlides: 4,
+                minSlides: 4,
+                moveSlides: 1,
+                slideWidth: 336,
+                slideMargin:15
+            })
+            $('.threebar').click(function(){
+                $(this).siblings().slideToggle()
+                return false
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div class="top_menu">
+                <ul class="top-m inner">
+                    <li><a href="#">로그인</a></li>
+                    <li><a href="#">회원가입</a></li>
+                    <li><a href="#">마이페이지</a></li>
+                    <li><a href="#">주문조회</a></li>
+                    <li><a href="#">찜목록</a></li>
+                </ul>
+            </div>
+            <div class="head inner">
+                <div class="serch">
+                    <a href="#">
+                        <!-- <img src="images/glass.png" alt="검색"> -->
+                        <input type="text">
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="images/main_logo.png" alt="메인로고">
+                    </a>
+                </div>
+            </div>
+            <nav>
+                <ul class="main-m inner">
+                    <li><a href="#">건강한 한끼</a>
+                        <div class="sub-m">
+                            <a href="#">미트로프</a>
+                            <a href="#">스튜</a>
+                        </div>
+                    </li>
+                    <li><a href="#">동결건조</a>
+                        <div class="sub-m">
+                            <a href="#">큐브</a>
+                            <a href="#">야채</a>
+                        </div>
+                    </li>
+                    <li><a href="#">육포&어포</a>
+                        <div class="sub-m">
+                            <a href="#">육포</a>
+                            <a href="#">어포</a>
+                        </div>
+                    </li>
+                    <li><a href="#">껌</a>
+                    <li><a href="#">스페셜 디저트</a>
+                        <div class="sub-m">
+                            <a href="#">케이크</a>
+                            <a href="#">머핀</a>
+                            <a href="#">쿠키</a>
+                        </div>
+                    <li><a href="#">액세사리</a>
+                        <div class="sub-m">
+                            <a href="#">삔</a>
+                            <a href="#">턱받이</a>
+                            <a href="#">옷</a>
+                        </div>
+                    <li><a href="#">커뮤니티</a>
+                        <div class="sub-m">
+                            <a href="#">공지사항</a>
+                            <a href="#">질문과 대답</a>
+                            <a href="#">제조과정</a>
+                            <a href="#">이벤트</a>
+                        </div>
+                    <li class="time"><a href="#">타임세일</a></li>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+        <div class="main_banner">
+            <div class="main_bannerbox">
+                <div class="M-banner01">
+                    <a href="#">
+                        <img src="images/main_banner.png" alt="메인베너">
+                    </a>
+                </div>
+                <div class="M-banner01">
+                    <a href="#">
+                        <img src="images/main_banner.png" alt="메인베너">
+                    </a>
+                </div>
+                <div class="M-banner01">
+                    <a href="#">
+                        <img src="images/main_banner.png" alt="메인베너">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="quick">
+                <div class="threebar">
+                    <a href="#">
+                        <img src="images/quick_threebar.png" alt="3단바">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="images/quick_glass.png" alt="검색">
+                    </a>
+                </div>
+
+                <div>
+                    <a href="#">
+                        <img src="images/quick_mypage.png" alt="마이페이지">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_review.png" alt="리뷰">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_cart.png" alt="장바구니">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_cupon.png" alt="쿠폰">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_jong.png" alt="종">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_heart.png" alt="찜">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_up.png" alt="위로">
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <img src="images/quick_down.png" alt="아래로">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="middle">
+            <div class="middle_logo">
+                <img src="images/middle_logo.png" alt="중간로고">
+            </div>
+            <div>
+                <div class="middle_picture">
+                    <img src="images/picture01.png" alt="100% 수제간식 사진">
+                    <img src="images/picture02.png" alt="100% 수제간식 글자">
+                </div>
+            </div>
+        </div>
+        <div class="prize">
+            <div class="goodfood">
+                <h1 class="title">잘 나가는 상품</h1>
+                <div class="more iiiner">
+                    <a href="#">+더보기</a>
+                </div>
+                <div class="goodfood_picture">
+                    <div class="goodfood-slide">
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/goodfood_01.png" alt="잘나가는상품1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>오리머핀</h1>
+                                    <h2>(아이스박스 필수 구매!)</h2>
+                                    <h3>4,500원</h3>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/sinsangipgo.png" alt="신상입고">
+                                </div>
+                                <div>
+                                    <img src="images/jacaejaejak.png" alt="자체제작">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/goodfood_02.png" alt="잘나가는상품2">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>치킨&가자미 타르트</h1>
+                                    <h2>(아이스박스 필수 구매!)</h2>
+                                    <h3>8,900원</h3>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/sinsangipgo.png" alt="신상입고">
+                                </div>
+                                <div>
+                                    <img src="images/chuchen.png" alt="추천">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/goodfood_03.png" alt="잘나가는상품3">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>소발톱껌</h1>
+                                    <h2>#힘이 불끈불끈</h2>
+                                    <h3>3,900원</h3>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/jacaejaejak.png" alt="자체제작">
+                                </div>
+                                <div>
+                                    <img src="images/event.png" alt="이벤트 ">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/goodfood_04.png" alt="잘나가는상품4">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>연어마들렌</h1>
+                                    <h2>야들야들한 연어가 가득</h2>
+                                    <h3>6,500원</h3>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/chuchen.png" alt="추천">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/goodfood_05.png" alt="잘나가는상품5">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>오리왕껌</h1>
+                                    <h2>#기호상품#이빨튼튼</h2>
+                                    <h3>5,900원</h3>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/sinsangipgo.png" alt="신상입고">
+                                </div>
+                                <div>
+                                    <img src="images/jacaejaejak.png" alt="자체제작">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="salefood">
+                <h1 class="title">할인 상품</h1>
+                <div class="more iiiner">
+                    <a href="#">+더보기</a>
+                </div>
+                <div class="salefood_picture">
+                    <div class="salefood-slide">
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/salefood_01.png" alt="할인상품1">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>오리통다리껌</h1>
+                                    <h2>#스트레스 해소</h2>
+                                    <h5><s>3,900원</s></h5>
+                                    <h4>3,000원</h4>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/jacaejaejak.png" alt="자체제작">
+                                </div>
+                                <div>
+                                    <img src="images/event.png" alt="이벤트">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/salefood_02.png" alt="할인상품2">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>단호박 우유껌 10p</h1>
+                                    <h2>달달한 단호박이 듬뿍~!</h2>
+                                    <h5><s>5,500원</s></h5>
+                                    <h4>4,500원</h4>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/sale.png" alt="세일">
+                                </div>
+                                <div>
+                                    <img src="images/event.png" alt="이벤트">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/salefood_03.png" alt="할인상품3">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>보리새싹 우유껌 10p</h1>
+                                    <h2>흔하지않는 보리새싹으로 맛있는 껌을?</h2>
+                                    <h5><s>5,500원</s></h5>
+                                    <h4>4,500원</h4>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/event.png" alt="이벤트 ">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/slaefood_04.png" alt="할인상품4">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>동결건조-열빙어 30g</h1>
+                                    <h2>가시가 하나도 없는 열빙어</h2>
+                                    <h5><s>6,800원</s></h5>
+                                    <h4>5,900원</h4>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/jacaejaejak.png" alt="자체제작">
+                                </div>
+                                <div>
+                                    <img src="images/sale.png" alt="세일">
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="food">
+                                <a href="#">
+                                    <img src="images/salefood_05.png" alt="할인상품5">
+                                </a>
+                            </div>
+                            <div>
+                                <a href="#">
+                                    <h1>오리갈비껌 6p</h1>
+                                    <h2>6p로 넉넉하게~</h2>
+                                    <h5><s>7,900원</s></h5>
+                                    <h4>6,400원</h4>
+                                </a>
+                            </div>
+                            <div class="higlight">
+                                <div>
+                                    <img src="images/sale.png" alt="세일">
+                                </div>
+                                <div>
+                                    <img src="images/event.png" alt="이벤트">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ad inner">
+            <div>
+                <img src="images/bottom_banner01.png" alt="광고1">
+            </div>
+            <div>
+                <img src="images/bottom_banner02.png" alt="광고2">
+            </div>
+        </div>
+        <div class="review">
+            <h1>댕댕이들이 전하는 리얼후기</h1>
+            <h2>"맛있는건 함께 나눠요"</h2>
+            <h3 class="iiner">더 많은 후기 보러가기</h3>
+            <div class="review-S">
+                <div class="review_picture">
+                    <div class="review-slide">
+                        <div class="review01">
+                            <img src="images/review_picture01.png" alt="리뷰1" class="review_big">
+                            <div class="star">
+                                <h4>2021.09.08</h4>
+                            </div>
+                            <h5>우리 강아지가 너무 좋아해요~! 배송도 빨리</h5>
+                            <div class="minireview">
+                                <img src="images/review_minipicture01.png" alt="작은리뷰01" class="review_small">
+                                <h6>오리뼈 다리껌</h6>
+                                <img src="images/review_cart.png" alt="리뷰장바구니" class="reviewcart">
+                            </div>
+                        </div>
+                        <div class="review01">
+                            <img src="images/review_picture02.png" alt="리뷰2" class="review_big">
+                            <div class="star">
+                                <h4>2021.09.08</h4>
+                            </div>
+                            <h5>처음 아이에게 사주는 수제간식..이제 여기</h5>
+                            <div class="minireview">
+                                <img src="images/review_minipicture02.png" alt="작은리뷰02" class="review_small">
+                                <h6>초원에서 자란 돼지져키</h6>
+                                <img src="images/review_cart.png" alt="리뷰장바구니" class="reviewcart">
+                            </div>
+                        </div>
+                        <div class="review01">
+                            <img src="images/review_picture03.png" alt="리뷰3" class="review_big">
+                            <div class="star">
+                                <h4>2021.09.08</h4>
+                            </div>
+                            <h5>바스락 소리만나면 제손만 쳐다보는 ㅋㅋㅋ</h5>
+                            <div class="minireview">
+                                <img src="images/review_minipicture03.png" alt="작은리뷰03" class="review_small">
+                                <h6>초원에서 자란 돼지져키</h6>
+                                <img src="images/review_cart.png" alt="리뷰장바구니" class="reviewcart">
+                            </div>
+                        </div>
+                        <div class="review01">
+                            <img src="images/review_picture04.png" alt="리뷰4" class="review_big">
+                            <div class="star">
+                                <h4>2021.09.07</h4>
+                            </div>
+                            <h5>머핀이 진짜 사람이 먹을수있는것 처럼 너</h5>
+                            <div class="minireview">
+                                <img src="images/review_minipicture04.png" alt="작은리뷰04" class="review_small">
+                                <h6>오리머핀</h6>
+                                <img src="images/review_cart.png" alt="리뷰장바구니" class="reviewcart">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <a href="#"><img src="images/instargram.png" alt="인스타그램"></a>
+                <h1><a href="#">@MYANG_MYANG</a></h1>
+            </div>
+        </div>
+        <footer>
+            <div class="information">
+                <h1>회사정보</h1>
+                <h2>대표자 : 차아현
+                    <br>
+                    상호명 : 뫙뫙(주)
+                    <br>
+                    대표전화 : 070-5123-5487 평일 09:00~18:00(토/일/공휴일 휴무)
+                    <br>
+                    주소 : 부산광역시 연수로 11번길 102
+                    <br>
+                    이메일 : yangfam58@naver.com
+                    <br>
+                    사업자등록번호 : 20126-78901</h2>
+            </div>
+            <div class="custom">
+                <h1>고객센터</h1>
+                <h2>070-7795-2157</h2>
+                <h3>게시판 Q&A를 이용해주시면 빠르게 처리해드리겠습니다.
+                    <br>
+                    평일 10:00~18:00 / 점심 12:00~13:00 (토/일/공휴일 휴무)
+                </h3>
+            </div>
+            <div class="cash">
+                <h1>계좌번호</h1>
+                <h2>농협 352-1019-0718-33</h2>
+                <h3>차아현(뫙뫙)</h3>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
